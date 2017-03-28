@@ -1,0 +1,76 @@
+h1 {
+    font-size: 24px;
+    line-height: 1.5;
+}
+
+h2 {
+    font-size: 22px;
+    line-height: 1.5;
+}
+
+h3 {
+    font-size: 20px;
+    line-height: 1.5;
+}
+
+h4 {
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+h5 {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.post-main .post-section h3 {
+    margin-top: 24px;
+}
+
+.mdl-layout-title.page-title {
+    color: #fff;
+    text-decoration: none;
+
+    @media (max-width: 640px) {
+        max-width: 100%;
+    }
+}
+
+
+.mdl-layout__header-row {
+    @media (max-width: 640px) {
+        height: 96px;
+    }
+}
+
+.mdl-layout__header .mdl-layout__drawer-button {
+    @media (max-width: 640px) {
+        margin-top: 24px;
+    }
+}
+
+.mdl-layout__header .mdl-layout__drawer-button {
+    color: #fff;
+}
+
+ol.letters {
+    list-style: lower-alpha;
+}
+
+.page-content {
+    width: 100%;
+}
+
+.mdl-card__title {
+    text-decoration: none;
+}
+
+.post-ribbon {
+    height: 0;
+    padding-bottom: 34.375%;
+
+    @media (max-width: 640px) {
+        height: 40vh;
+        padding-bottom: 0;
+    }
+}

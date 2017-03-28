@@ -1,7 +1,7 @@
 ---
 layout: default
 ---
-<div class="post-ribbon"></div>
+<div class="post-ribbon" {% if page.image %} style="background: url('{{ page.image }}') center/cover;" {% endif %}></div>
 <main class="post-main mdl-layout__content">
   <div class="post-container mdl-grid">
     <div class="mdl-cell mdl-cell--2-col mdl-cell--hide-tablet mdl-cell--hide-phone"></div>
@@ -9,9 +9,8 @@ layout: default
       <div class="mdl-color-text--grey-500">
       {{ page.date | date: "%b %-d, %Y" }}{% if page.author %} • {{ page.author }}{% endif %}{% if page.meta %} • {{ page.meta }}{% endif %}
       </div>
-      <h3>{{ page.title }}</h3>
       <article class="post-content">
-        <p>{{ content }}</p>
+        {{ content }}
       </article>
       {% if site.disqus %}
       <div>
