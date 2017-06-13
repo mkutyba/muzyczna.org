@@ -15,6 +15,7 @@ layout: default
       </div>
     </div>
 
+  {% assign i = 0 %}
   {% for page in site.pages %}
   {% if page.title %}
     <div class="mdl-card mdl-shadow--2dp mdl-cell mdl-cell--4-col mdl-cell--4-col-desktop mdl-cell--4-col-tablet  mdl-cell--12-col-phone">
@@ -32,6 +33,13 @@ layout: default
         </a>
       </div>
     </div>
+    {% capture i %}{{ i | plus:1 }}{% endcapture %}
+  {% endif %}
+  {% if i == "2" %}
+    <div class="mdl-card mdl-shadow--2dp mdl-cell mdl-cell--4-col mdl-cell--4-col-desktop mdl-cell--4-col-tablet  mdl-cell--12-col-phone">
+      <div class="fb-page" data-href="https://www.facebook.com/muzyczna.org" data-tabs="timeline" data-width="378" data-height="229" data-small-header="true" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/muzyczna.org" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/muzyczna.org">Stowarzyszenie Przyjaciele Szkoły Muzycznej w Świdnicy</a></blockquote></div>
+    </div>
+    {% capture i %}{{ i | plus:1 }}{% endcapture %}
   {% endif %}
   {% endfor %}
 
