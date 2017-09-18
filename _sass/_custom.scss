@@ -38,19 +38,56 @@ h5 {
 
 
 .mdl-layout__header-row {
-    @media (max-width: 640px) {
-        height: 96px;
-    }
-}
 
-.mdl-layout__header .mdl-layout__drawer-button {
-    @media (max-width: 640px) {
-        margin-top: 24px;
-    }
 }
 
 .mdl-layout__header .mdl-layout__drawer-button {
     color: #fff;
+    margin: 0;
+    padding: 8px;
+
+    @media (max-width: 1024px) {
+        padding-top: 16px;
+        padding-bottom: 16px;
+    }
+
+    @media (max-width: 640px) {
+        padding-top: 24px;
+        padding-bottom: 24px;
+    }
+
+    .material-icons {
+        @media (max-width: 1024px) {
+            font-size: 36px;
+            line-height: 1.5;
+        }
+    }
+}
+
+.mdl-layout__header {
+    .mdl-layout-spacer {
+        @media (max-width: 1024px) {
+            display: none;
+        }
+    }
+
+    .mdl-layout__header-row {
+        color: #fff;
+
+        @media (max-width: 1024px) {
+            height: 80px;
+            flex-flow: column;
+            justify-content: space-evenly;
+        }
+
+        @media (max-width: 640px) {
+            height: 96px;
+        }
+
+        a {
+            color: #fff;
+        }
+    }
 }
 
 ol.letters {
